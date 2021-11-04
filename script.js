@@ -17,7 +17,10 @@ Ogni membro dovrà avere le informazioni necessarie per stampare la relativa car
 
 // variabili utili 
 let memberCard = document.querySelector(".team-container");
-
+let newMemberName = document.getElementById("name");
+let newMemberRole = document.getElementById("role");
+let newMemberImage = document.getElementById("image");
+let addMember = document.getElementById("addMemberButton");
 
 
 // array
@@ -79,3 +82,47 @@ for (let i = 0; i < membersTeam.length; i++) {
         </div>
     `
 }
+
+
+
+// aggiunta nuovo membro 
+addMember.addEventListener("click" , 
+
+    function() {
+
+        // salvo i dati del nuovo membro 
+        let newMemberNameInput = newMemberName.value;
+        console.log(newMemberNameInput);
+        let newMemberRoleInput = newMemberRole.value;
+        console.log(newMemberRoleInput);
+        let newMemberImageInput = newMemberImage.value;
+        console.log(newMemberImageInput);
+
+        // creo un nuovo oggetto per il nuovo membro 
+        newMemberObject = {
+            "name" : newMemberNameInput ,
+            "role" : newMemberRoleInput ,
+            "image" : newMemberImageInput
+        }
+
+        // aggiungo il nuovo oggetto all'array 
+        membersTeam.push(newMemberObject);
+
+        // stampo i dati del nuovo membro 
+        memberCard.innerHTML += `
+        <div class="team-card">
+            <div class="card-image">
+                <img
+                    src="${newMemberObject.image}"
+                    alt="${newMemberObject.name}"
+                />
+            </div>
+            <div class="card-text">
+                <h3>${newMemberObject.name}</h3>
+                <p>${newMemberObject.role}</p>
+            </div>
+        </div>
+    `
+    }
+
+)
