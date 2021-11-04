@@ -20,7 +20,6 @@ let memberCard = document.querySelector(".team-container");
 
 
 
-
 // array
 var membersTeam = [
     {
@@ -55,3 +54,39 @@ var membersTeam = [
     }
 
 ];
+
+
+
+// stampa degli elementi in pagina 
+for (let i = 0; i < membersTeam.length; i++) {
+    
+    let memberName = "";
+    let memberRole = "";
+    let memberPhoto = "";
+
+    for (var key in membersTeam) {
+            memberName = membersTeam[i].name;
+            memberRole = membersTeam[i].role;
+            memberPhoto = membersTeam[i].image;
+    }
+
+    console.log(memberName);
+    console.log(memberRole);
+    console.log(memberPhoto);
+
+    memberCard.innerHTML += `
+        <div class="team-card">
+            <div class="card-img">
+                <img
+                    src="${memberPhoto}"
+                    alt="${memberName}"
+                />
+            </div>
+            <div class="card-text">
+                <h3>${memberName}</h3>
+                <p>${memberRole}</p>
+            </div>
+        </div>
+    `
+
+}
