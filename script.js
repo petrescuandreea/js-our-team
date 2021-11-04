@@ -13,3 +13,45 @@ Ogni membro dovrà avere le informazioni necessarie per stampare la relativa car
 // 1. creo un array di oggetti
 // 2. stampo le card in pagina => for
 // 3. permetto all'utente di aggiungere nuovi membri 
+
+
+// variabili utili 
+let memberCard = document.querySelector(".team-container");
+
+
+
+
+// array
+var membersTeam = [
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        "name" : "Wayne Barnett" ,
+        "role" : "Founder & CEO" , 
+        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+    }
+
+];
