@@ -60,23 +60,13 @@ var membersTeam = [
 // stampa degli elementi in pagina 
 for (let i = 0; i < membersTeam.length; i++) {
     
-    let memberName = "";
-    let memberRole = "";
-    let memberPhoto = "";
-
-    for (var key in membersTeam) {
-        memberName = membersTeam[i].name;
-        memberRole = membersTeam[i].role;
-        memberPhoto = membersTeam[i].image;
-    }
-
-    console.log(memberName);
-    console.log(memberRole);
-    console.log(memberPhoto);
+    let memberName = membersTeam[i].name;
+    let memberRole = membersTeam[i].role;
+    let memberPhoto = membersTeam[i].image;
 
     memberCard.innerHTML += `
         <div class="team-card">
-            <div class="card-img">
+            <div class="card-image">
                 <img
                     src="${memberPhoto}"
                     alt="${memberName}"
@@ -88,5 +78,4 @@ for (let i = 0; i < membersTeam.length; i++) {
             </div>
         </div>
     `
-
 }
