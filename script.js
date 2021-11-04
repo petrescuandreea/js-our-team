@@ -28,29 +28,29 @@ var membersTeam = [
         "image" : 'img/wayne-barnett-founder-ceo.jpg'
     },
     {
-        "name" : "Wayne Barnett" ,
-        "role" : "Founder & CEO" , 
-        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+        "name" : "Angela Caroll" ,
+        "role" : "Chief Editor" , 
+        "image" : 'img/angela-caroll-chief-editor.jpg'
     },
     {
-        "name" : "Wayne Barnett" ,
-        "role" : "Founder & CEO" , 
-        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+        "name" : "Walter Gordon" ,
+        "role" : "Office Manager" , 
+        "image" : 'img/walter-gordon-office-manager.jpg'
     },
     {
-        "name" : "Wayne Barnett" ,
-        "role" : "Founder & CEO" , 
-        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+        "name" : "Angela Lopez" ,
+        "role" : "Social Media Manager" , 
+        "image" : 'img/angela-lopez-social-media-manager.jpg'
     },
     {
-        "name" : "Wayne Barnett" ,
-        "role" : "Founder & CEO" , 
-        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+        "name" : "Scott Estrada" ,
+        "role" : "Developer" , 
+        "image" : 'img/scott-estrada-developer.jpg'
     },
     {
-        "name" : "Wayne Barnett" ,
-        "role" : "Founder & CEO" , 
-        "image" : 'img/wayne-barnett-founder-ceo.jpg'
+        "name" : "Barbara Ramos" ,
+        "role" : "Graphic Designer" , 
+        "image" : 'img/barbara-ramos-graphic-designer.jpg'
     }
 
 ];
@@ -65,9 +65,9 @@ for (let i = 0; i < membersTeam.length; i++) {
     let memberPhoto = "";
 
     for (var key in membersTeam) {
-            memberName = membersTeam[i].name;
-            memberRole = membersTeam[i].role;
-            memberPhoto = membersTeam[i].image;
+        memberName = membersTeam[i].name;
+        memberRole = membersTeam[i].role;
+        memberPhoto = membersTeam[i].image;
     }
 
     console.log(memberName);
